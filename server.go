@@ -5,10 +5,11 @@ import (
 	"crypto/elliptic"
 	"crypto/rand"
 	"encoding/json"
-	"github.com/gorilla/websocket"
-	"github.com/sandertv/mcwss/protocol"
 	"log"
 	"net/http"
+
+	"github.com/gorilla/websocket"
+	"github.com/sandertv/mcwss/protocol"
 )
 
 // Server is the main entry-point of the mcwss package. It allows interfacing with clients connected to it and
