@@ -1,5 +1,7 @@
 package event
 
+import "github.com/sandertv/mcwss/mctype"
+
 const (
 	TravelWalking = iota
 	TravelSwimmingInWater
@@ -25,6 +27,8 @@ type PlayerTravelled struct {
 	MobType int
 	// IsUnderwater indicates if the movement was underwater.
 	IsUnderwater bool `json:",omitempty"`
+	// Player Information include coordinates
+	Player mctype.Player
 }
 
 // Measurements returns all measurements associated with the player travelled event.
